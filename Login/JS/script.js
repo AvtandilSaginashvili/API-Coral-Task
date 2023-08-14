@@ -21,6 +21,6 @@ function enter() {
         passwordSuccess.classList.remove("d-none");
     }
 
-    
+    window.location.href = "https://api-coral-task.vercel.app/";
 
 }
