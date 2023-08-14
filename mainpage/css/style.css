@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Open Sans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+
+
+/* Header & Navbar */
+
+
+
+.sub-btn1 {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.sub-btn1:hover {
+    background-color: transparent !important;
+}
+
+.a-acc {
+    color: #1E2832;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+}
+
+.a-acc::after {
+    content: '';
+    position: absolute;
+    left: 28px;
+    bottom: -2px;
+    height: 2px;
+    width: 0%;
+    background-color: rgba(255,111,97,0.56);
+    transition: 0.7s;
+}
+
+.a-acc:hover::after {
+    width: 71%;
+}
+
+.a-navigate {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+    padding: 0 !important;
+    transition: 0.6s !important;
+}
+
+.a-navigate:hover {
+    text-shadow: 0px 15px 1px rgba(255,111,97,0.56);
+    color: transparent !important;
+}
+
+
+
+/* 1 container */
+
+
+
+.h3-collections {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 55px;
+    text-transform: capitalize;
+}
+
+.p-collection {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    text-transform: capitalize;
+    margin-top: 52px;
+}
+
+.shopbtn {
+    width: 223px;
+    height: 72px;
+    border: none;
+    background-color: #1E2832;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 66px;
+    transition: 0.5s;
+}
+
+.shopbtn:hover {
+    background-color: #FF6F61;
+}
+
+
+/* 3 container */
+
+
+.p-rotate {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    writing-mode: vertical-lr;
+    display: inline;
+    transform: rotate(-180deg);
+}
+
+
+/* 4 container */
+
+
+
+.h4-newsletter {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.a-products {
+    color:  rgba(0, 0, 0, 0.50);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.a-products:focus {
+    color: #000;
+}
+
+.filterbtn {
+    width: 92px;
+    height: 32px;
+    background-color: #1E2832;
+    border: none;
+    color:  #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.h6-names {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 18px;
+    padding-left: 10px;
+}
+
+.p-cattegories {
+    color: rgba(0, 0, 0, 0.50);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.p-price {
+    color: #000;
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.img-size {
+    width: 100%;
+    height: 330px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.img-size:hover {
+    transform: scale(1.1);
+}
+
+
+/* 6 container */
+
+
+
+.p-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin-top: 55px;
+}
+
+.collectionbtn {
+    width: 237px;
+    height: 72px;
+    border: none;
+    background-color: #FFF;
+    color: #1E2832;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 55px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 0 0 2px #ffffff20;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.collectionbtn span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #7E1829;
+  border-radius: 40%;
+  opacity: 0;
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.collectionbtn span:first-child {
+  position: relative;
+  z-index: -5;
+}
+
+.collectionbtn:hover {
+  box-shadow: 0 0 0 2px #7E1829;
+}
+
+.collectionbtn:active {
+  scale: 0.95;
+}
+
+.collectionbtn:hover span:last-child {
+  width: 185px;
+  height: 185px;
+  opacity: 1;
+}
+
+
+/* 7 container */
+
+
+.showbtn {
+    width: 93px;
+    height: 32px;
+    border: none;
+    background-color: #1E2832;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+/* 8 container */
+
+
+
+.h6-follow {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.inpemaillast {
+    width: 643px;
+    height: 32px;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    outline: none;
+    padding-left: 15px;
+    color: rgba(30, 40, 50, 0.50);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.submitbtn {
+    width: 91px;
+    height: 32px;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    color: rgba(30, 40, 50, 0.50);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: 26px;
+}
+
+
+
+/* footer */
+
+
+.p-footer {
+    color: rgba(30, 40, 50, 0.75);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 32px;
+}
+
+.h6-catalog {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.a-footer {
+    color: #1E2832;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.p-inc {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.scrollbtn {
+    border: none;
+    background-color: transparent;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
