@@ -19,8 +19,9 @@ function enter() {
     }else {
         passwordDanger.classList.add("d-none");
         passwordSuccess.classList.remove("d-none");
+        window.location.href = "https://api-coral-task.vercel.app/";
     }
 
-    window.location.href = "https://api-coral-task.vercel.app/";
+    
 
 }
