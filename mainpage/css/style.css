@@ -96,6 +96,19 @@ body {
     text-transform: capitalize;
 }
 
+@media screen and (max-width: 768px) {
+    .h3-collections {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Roboto;
+        font-size: 67px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 55px;
+        text-transform: capitalize;
+    }
+}
+
 .p-collection {
     color: #000;
     font-feature-settings: 'clig' off, 'liga' off;

@@ -8,19 +8,14 @@ function show() {
 
 
 
-var cards = {};
-
 var row = document.getElementById("rowId");
 axios.get("https://fakestoreapi.com/products").then(function(response){
-
-cards = response.data;
-
-console.log(cards);
 
     response.data.forEach(function(data) {
 
         var col3 = document.createElement("div");
-        col3.classList.add("col-3");
+        col3.classList.add("col-md-3");
+        col3.classList.add("col-12")
     
         var box = document.createElement("div");
         box.classList.add("w-100");
@@ -68,7 +63,8 @@ axios.get("https://fakestoreapi.com/products?limit=4").then(function(response){
     response.data.forEach(function(data) {
 
         var col3 = document.createElement("div");
-        col3.classList.add("col-3");
+        col3.classList.add("col-md-3");
+        col3.classList.add("col-12");
     
         var box = document.createElement("div");
         box.classList.add("w-100");
