@@ -7,7 +7,7 @@ function enter() {
  var passwordDanger = document.getElementById("danger2");
  var passwordSuccess = document.getElementById("success2");
 
- var regex = new RegExp("^[a-zA-Z]\.[a-zA-Z][0-9]+@[a-z]{2,5}\.[a-z]{2,3}$", "gim");
+ var regex = new RegExp("^[a-zA-Z]\.[a-zA-Z]+@[a-z]{2,5}\.[a-z]{2,3}$", "gim");
 
     if(!regex.test(emailInput)) {
         dangerAlert.classList.remove("d-none");
