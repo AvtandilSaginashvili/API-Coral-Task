@@ -41,13 +41,13 @@
 
                 <div class="w-100 pt-5">
 
-                    <form>
+                    <form onsubmit="return enter()">
 
                        <div class="form-group">
 
                         <label class="mb-2" for="email">შეიყვანეთ ელ.ფოსტა</label>
 
-                        <input class="form-control inp-email" type="text" name="email" id="email" placeholder="example@example.com">
+                        <input class="form-control inp-email" onkeyup="type()" type="text" name="email" id="email" placeholder="example@example.com">
 
                         <div id="danger" class="alert alert-danger alertdiv d-none">შეიყვანეთ ელ.ფოსტის მისამართი სწორად</div>
                         <div id="success" class="alert alert-success alertdiv2 d-none">Success</div>
@@ -58,14 +58,14 @@
 
                         <label class="mb-2 mt-5" for="password">შეიყვანეთ პაროლი</label>
 
-                        <input class="form-control inp-email" type="password" name="password" id="password" placeholder="Enter Password">
+                        <input class="form-control inp-email" type="password" onkeyup="typePass()" name="password" id="password" placeholder="Enter Password">
 
                         <div id="danger2" class="alert alert-danger alertdiv d-none">შეყვანილი მონაცემი არასწორია</div>
                         <div id="success2" class="alert alert-success alertdiv2 d-none">Success</div>
                         
                        </div> 
 
-                       <input type="button" onclick="enter()" class="sub-btn" value="Enter">
+                       <input type="submit"  class="sub-btn" value="Enter">
                         
                     </form>
 

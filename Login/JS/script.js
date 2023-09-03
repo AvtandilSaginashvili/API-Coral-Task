@@ -8,20 +8,22 @@ function enter() {
  var passwordSuccess = document.getElementById("success2");
 
  var regex = new RegExp("^[a-zA-Z]\.[a-zA-Z]+@[a-z]{2,5}\.[a-z]{2,3}$", "gim");
+ 
 
     if(!regex.test(emailInput)) {
         dangerAlert.classList.remove("d-none");
+        return false;
     }else if(passwordInput.length == 0) {
-        successAlert.classList.remove("d-none");
         dangerAlert.classList.add("d-none");
-
+        successAlert.classList.remove("d-none");
+        
         passwordDanger.classList.remove("d-none");
+        return false;
     }else {
         passwordDanger.classList.add("d-none");
         passwordSuccess.classList.remove("d-none");
         window.location.href = "https://api-coral-task.vercel.app/";
+        return false;
     }
-
-    
 
 }
